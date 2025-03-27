@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+}
+
+body {
+  background-color: #30343f;
+}
+
+h1 {
+  font-family: Cormorant;
+  color: #fafaff;
+}
+
+h2 {
+  font-family: Cormorant;
+  color: #fafaff;
+}
+
+h3 {
+  font-family: Cormorant;
+  color: #e4d9ff;
+}
+
+h4 {
+  font-family: Cormorant;
+  color: #e4d9ff;
+}
+
+p {
+  font-family: Inter;
+  color: #e4d9ff;
+}
+
+.nav-bar {
+  display: flex;
+}
+
+@media only screen and (max-width: 390px) {
+  .nav-bar__name {
+    font-size: 24px;
+  }
+  .navigation__link {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

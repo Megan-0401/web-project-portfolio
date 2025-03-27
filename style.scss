@@ -1,0 +1,49 @@
+@use "typography";
+@use "palette";
+@use "media-queries";
+
+body {
+	background-color: palette.$col-background;
+}
+
+h1 {
+	font-family: typography.$header-font-family;
+	color: palette.$col-text1;
+}
+
+h2 {
+	font-family: typography.$header-font-family;
+	color: palette.$col-text1;
+}
+
+h3 {
+	font-family: typography.$header-font-family;
+	color: palette.$col-text2;
+}
+
+h4 {
+	font-family: typography.$header-font-family;
+	color: palette.$col-text2;
+}
+
+p {
+	font-family: typography.$para-font-family;
+	color: palette.$col-text2;
+}
+
+.nav-bar {
+	display: flex;
+}
+
+@include media-queries.mobile {
+	.nav-bar {
+		&__name {
+			font-size: typography.$s-name-font-size;
+		}
+	}
+	.navigation {
+		&__link {
+			display: none;
+		}
+	}
+}
