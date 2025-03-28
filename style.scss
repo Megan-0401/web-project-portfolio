@@ -63,8 +63,22 @@ a {
 	&__display {
 		background-color: black;
 	}
+	&__info {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__subtitles {
+		display: flex;
+	}
+	&__subtitle {
+		font-size: typography.$lg-subtitle-font-size;
+		margin: 30px;
+	}
 }
 .contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	&__btn {
 		border: 2px solid palette.$col-text1;
 		background: none;
@@ -72,10 +86,16 @@ a {
 	}
 }
 .footer {
+	height: 115px;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: black;
 	&__btn {
 		@include round-btn-style;
+		width: 55px;
+		height: 55px;
+		margin: 10px;
 	}
 }
 
@@ -137,8 +157,6 @@ a {
 			margin: 10px 0px;
 		}
 		&__info {
-			display: flex;
-			justify-content: space-between;
 			margin-bottom: 50px;
 			margin-top: 20px;
 		}
@@ -150,9 +168,6 @@ a {
 		}
 	}
 	.contact {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		&__title {
 			text-align: center;
 			padding: 40px 0px;
@@ -161,16 +176,6 @@ a {
 			width: 270px;
 			height: 80px;
 			font-size: typography.$s-button-font-size;
-		}
-	}
-	.footer {
-		height: 115px;
-		justify-content: center;
-		align-items: center;
-		&__btn {
-			width: 55px;
-			height: 55px;
-			margin: 10px;
 		}
 	}
 }
@@ -261,11 +266,30 @@ a {
 			width: 472px;
 			height: 265px;
 		}
+		&__info {
+			margin-top: 10px;
+		}
+		&__btns {
+			margin-right: 200px;
+		}
+		&__btn {
+			margin-left: 10px;
+		}
 	}
 	#project2 {
 		grid-column-start: 3;
 	}
 	#project4 {
 		grid-column-start: 3;
+	}
+	.contact {
+		&__title {
+			padding-bottom: 60px;
+		}
+		&__btn {
+			width: 320px;
+			height: 80px;
+			font-size: typography.$lg-btn-font-size;
+		}
 	}
 }

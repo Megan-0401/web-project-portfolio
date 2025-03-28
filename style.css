@@ -60,7 +60,23 @@ a {
 .projects__display {
   background-color: black;
 }
+.projects__info {
+  display: flex;
+  justify-content: space-between;
+}
+.projects__subtitles {
+  display: flex;
+}
+.projects__subtitle {
+  font-size: 10px;
+  margin: 30px;
+}
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .contact__btn {
   border: 2px solid #fafaff;
   background: none;
@@ -68,12 +84,18 @@ a {
 }
 
 .footer {
+  height: 115px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: black;
 }
 .footer__btn {
   border: none;
   border-radius: 100%;
+  width: 55px;
+  height: 55px;
+  margin: 10px;
 }
 
 @media only screen and (max-width: 390px) {
@@ -127,8 +149,6 @@ a {
     margin: 10px 0px;
   }
   .projects__info {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 50px;
     margin-top: 20px;
   }
@@ -138,11 +158,6 @@ a {
   .projects__btn {
     margin-left: 10px;
   }
-  .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .contact__title {
     text-align: center;
     padding: 40px 0px;
@@ -151,16 +166,6 @@ a {
     width: 270px;
     height: 80px;
     font-size: 18px;
-  }
-  .footer {
-    height: 115px;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer__btn {
-    width: 55px;
-    height: 55px;
-    margin: 10px;
   }
 }
 @media only screen and (min-width: 391px) {
@@ -246,11 +251,28 @@ a {
     width: 472px;
     height: 265px;
   }
+  .projects__info {
+    margin-top: 10px;
+  }
+  .projects__btns {
+    margin-right: 200px;
+  }
+  .projects__btn {
+    margin-left: 10px;
+  }
   #project2 {
     grid-column-start: 3;
   }
   #project4 {
     grid-column-start: 3;
+  }
+  .contact__title {
+    padding-bottom: 60px;
+  }
+  .contact__btn {
+    width: 320px;
+    height: 80px;
+    font-size: 24px;
   }
 }
 
