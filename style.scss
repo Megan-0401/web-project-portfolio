@@ -13,17 +13,8 @@ h4 {
 	font-weight: lighter;
 }
 
-h1 {
-	font-family: typography.$header-font-family;
-	color: palette.$col-text1;
-	text-align: center;
-}
-
-h2 {
-	font-family: typography.$header-font-family;
-	color: palette.$col-text1;
-}
-
+h1,
+h2,
 h3 {
 	font-family: typography.$header-font-family;
 	color: palette.$col-text1;
@@ -37,6 +28,7 @@ h4 {
 p {
 	font-family: typography.$para-font-family;
 	color: palette.$col-text2;
+	line-height: 1.5;
 }
 
 .nav-bar {
@@ -49,6 +41,23 @@ p {
 	}
 	h1 {
 		font-size: typography.$s-name-font-size;
+		text-align: center;
+	}
+	h2 {
+		font-size: typography.$s-primary-header-font-size;
+	}
+	h3,
+	h4 {
+		font-size: typography.$s-secondary-header-font-size;
+	}
+	h3 {
+		font-weight: bold;
+	}
+	p {
+		font-size: typography.$s-para-font-size;
+	}
+	.section {
+		margin: typography.$s-margin;
 	}
 	.navigation {
 		&__link {
@@ -56,15 +65,48 @@ p {
 		}
 	}
 	.header {
-		margin: 108px 25px 0px 25px;
+		margin-top: 108px;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		margin-bottom: 70px;
 	}
 	#header-title {
-		font-size: typography.$s-primary-header-font-size;
+		margin-bottom: 98px;
 	}
-	#header-brief {
-		font-size: typography.$s-para-font-size;
+	#about-image {
+		height: 400px;
+		margin-bottom: 40px;
+	}
+	.about {
+		&__margin {
+			margin-bottom: typography.$s-primary-margin;
+		}
+		&__para {
+			margin-bottom: 30px;
+		}
+	}
+	.skills {
+		display: none;
+	}
+	.portfolio {
+		&__title {
+			margin-bottom: 20px;
+		}
+	}
+	.projects {
+		&__display {
+			background-color: black;
+			height: 265px;
+			margin: 10px 0px;
+		}
+		&__info {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 50px;
+			margin-top: 20px;
+		}
+		&__subtitles {
+			display: none;
+		}
 	}
 }
