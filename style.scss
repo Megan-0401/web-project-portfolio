@@ -53,6 +53,33 @@ a {
 		margin-bottom: 30px;
 	}
 }
+.skills {
+	&__text {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__desc {
+		font-size: typography.$lg-skills-font-size;
+		padding-right: 275px;
+		padding-left: 220px;
+	}
+	&__skill-icons {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		margin-top: 70px;
+		&--margin {
+			margin-right: 60px;
+		}
+	}
+}
+.skill-icons {
+	&__text {
+		color: palette.$col-text1;
+		font-size: typography.$lg-skills-font-size;
+		text-align: center;
+	}
+}
 .projects {
 	&__btn {
 		@include round-btn-style;
@@ -96,6 +123,9 @@ a {
 		width: 55px;
 		height: 55px;
 		margin: 10px;
+		&--center {
+			padding-top: 5px;
+		}
 	}
 }
 
@@ -237,21 +267,6 @@ a {
 	#about-image {
 		height: 558px;
 		grid-column-start: 3;
-	}
-	.skills {
-		&__text {
-			display: flex;
-			justify-content: space-between;
-		}
-		&__desc {
-			font-size: typography.$lg-skills-font-size;
-			padding-right: 275px;
-			padding-left: 220px;
-		}
-		&__skill-icons {
-			list-style: none;
-			display: flex;
-		}
 	}
 	.portfolio {
 		&__title {

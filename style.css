@@ -50,6 +50,31 @@ a {
   margin-bottom: 30px;
 }
 
+.skills__text {
+  display: flex;
+  justify-content: space-between;
+}
+.skills__desc {
+  font-size: 16px;
+  padding-right: 275px;
+  padding-left: 220px;
+}
+.skills__skill-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.skills__skill-icons--margin {
+  margin-right: 60px;
+}
+
+.skill-icons__text {
+  color: #fafaff;
+  font-size: 16px;
+  text-align: center;
+}
+
 .projects__btn {
   border: none;
   border-radius: 100%;
@@ -96,6 +121,9 @@ a {
   width: 55px;
   height: 55px;
   margin: 10px;
+}
+.footer__btn--center {
+  padding-top: 5px;
 }
 
 @media only screen and (max-width: 390px) {
@@ -225,19 +253,6 @@ a {
   #about-image {
     height: 558px;
     grid-column-start: 3;
-  }
-  .skills__text {
-    display: flex;
-    justify-content: space-between;
-  }
-  .skills__desc {
-    font-size: 16px;
-    padding-right: 275px;
-    padding-left: 220px;
-  }
-  .skills__skill-icons {
-    list-style: none;
-    display: flex;
   }
   .portfolio__title {
     margin-bottom: 50px;
