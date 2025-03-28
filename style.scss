@@ -2,6 +2,11 @@
 @use "palette";
 @use "media-queries";
 
+@mixin round-btn-style {
+	border: none;
+	border-radius: 100%;
+}
+
 body {
 	background-color: palette.$col-background;
 }
@@ -33,6 +38,26 @@ p {
 
 .nav-bar {
 	width: 100%;
+}
+.projects {
+	&__btn {
+		@include round-btn-style;
+		background-color: black;
+	}
+}
+.contact {
+	&__btn {
+		border: 2px solid palette.$col-text1;
+		background: none;
+		color: palette.$col-text1;
+	}
+}
+.footer {
+	display: flex;
+	background-color: black;
+	&__btn {
+		@include round-btn-style;
+	}
 }
 
 @include media-queries.mobile {
@@ -107,6 +132,35 @@ p {
 		}
 		&__subtitles {
 			display: none;
+		}
+		&__btn {
+			width: 45px;
+			height: 45px;
+			margin-left: 10px;
+		}
+	}
+	.contact {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&__title {
+			text-align: center;
+			padding: 40px 0px;
+		}
+		&__btn {
+			width: 270px;
+			height: 80px;
+			font-size: typography.$s-button-font-size;
+		}
+	}
+	.footer {
+		height: 115px;
+		justify-content: center;
+		align-items: center;
+		&__btn {
+			width: 55px;
+			height: 55px;
+			margin: 10px;
 		}
 	}
 }
