@@ -6,9 +6,17 @@ body {
 	background-color: palette.$col-background;
 }
 
+h1,
+h2,
+h3,
+h4 {
+	font-weight: lighter;
+}
+
 h1 {
 	font-family: typography.$header-font-family;
 	color: palette.$col-text1;
+	text-align: center;
 }
 
 h2 {
@@ -18,7 +26,7 @@ h2 {
 
 h3 {
 	font-family: typography.$header-font-family;
-	color: palette.$col-text2;
+	color: palette.$col-text1;
 }
 
 h4 {
@@ -32,18 +40,31 @@ p {
 }
 
 .nav-bar {
-	display: flex;
+	width: 100%;
 }
 
 @include media-queries.mobile {
 	.nav-bar {
-		&__name {
-			font-size: typography.$s-name-font-size;
-		}
+		margin-top: 20px;
+	}
+	h1 {
+		font-size: typography.$s-name-font-size;
 	}
 	.navigation {
 		&__link {
 			display: none;
 		}
+	}
+	.header {
+		margin: 108px 25px 0px 25px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#header-title {
+		font-size: typography.$s-primary-header-font-size;
+	}
+	#header-brief {
+		font-size: typography.$s-para-font-size;
 	}
 }

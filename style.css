@@ -6,41 +6,64 @@ body {
   background-color: #30343f;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-weight: lighter;
+}
+
 h1 {
-  font-family: Cormorant;
+  font-family: Garamond;
   color: #fafaff;
+  text-align: center;
 }
 
 h2 {
-  font-family: Cormorant;
+  font-family: Garamond;
   color: #fafaff;
 }
 
 h3 {
-  font-family: Cormorant;
-  color: #e4d9ff;
+  font-family: Garamond;
+  color: #fafaff;
 }
 
 h4 {
-  font-family: Cormorant;
+  font-family: Garamond;
   color: #e4d9ff;
 }
 
 p {
-  font-family: Inter;
+  font-family: Helvetica;
   color: #e4d9ff;
 }
 
 .nav-bar {
-  display: flex;
+  width: 100%;
 }
 
 @media only screen and (max-width: 390px) {
-  .nav-bar__name {
+  .nav-bar {
+    margin-top: 20px;
+  }
+  h1 {
     font-size: 24px;
   }
   .navigation__link {
     display: none;
+  }
+  .header {
+    margin: 108px 25px 0px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #header-title {
+    font-size: 80px;
+  }
+  #header-brief {
+    font-size: 16px;
   }
 }
 
