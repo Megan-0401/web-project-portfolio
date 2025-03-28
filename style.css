@@ -54,6 +54,11 @@ a {
   border: none;
   border-radius: 100%;
   background-color: black;
+  width: 45px;
+  height: 45px;
+}
+.projects__display {
+  background-color: black;
 }
 
 .contact__btn {
@@ -118,7 +123,6 @@ a {
     margin-bottom: 20px;
   }
   .projects__display {
-    background-color: black;
     height: 265px;
     margin: 10px 0px;
   }
@@ -132,8 +136,6 @@ a {
     display: none;
   }
   .projects__btn {
-    width: 45px;
-    height: 45px;
     margin-left: 10px;
   }
   .contact {
@@ -231,6 +233,24 @@ a {
   .skills__skill-icons {
     list-style: none;
     display: flex;
+  }
+  .portfolio__title {
+    margin-bottom: 50px;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 50% 50%;
+  }
+  .projects__display {
+    width: 472px;
+    height: 265px;
+  }
+  #project2 {
+    grid-column-start: 3;
+  }
+  #project4 {
+    grid-column-start: 3;
   }
 }
 

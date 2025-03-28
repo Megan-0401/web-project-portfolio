@@ -57,6 +57,11 @@ a {
 	&__btn {
 		@include round-btn-style;
 		background-color: black;
+		width: 45px;
+		height: 45px;
+	}
+	&__display {
+		background-color: black;
 	}
 }
 .contact {
@@ -128,7 +133,6 @@ a {
 	}
 	.projects {
 		&__display {
-			background-color: black;
 			height: 265px;
 			margin: 10px 0px;
 		}
@@ -142,8 +146,6 @@ a {
 			display: none;
 		}
 		&__btn {
-			width: 45px;
-			height: 45px;
 			margin-left: 10px;
 		}
 	}
@@ -245,5 +247,25 @@ a {
 			list-style: none;
 			display: flex;
 		}
+	}
+	.portfolio {
+		&__title {
+			margin-bottom: 50px;
+		}
+	}
+	.projects {
+		display: grid;
+		grid-template-columns: 40% 20% 40%;
+		grid-template-rows: 50% 50%;
+		&__display {
+			width: 472px;
+			height: 265px;
+		}
+	}
+	#project2 {
+		grid-column-start: 3;
+	}
+	#project4 {
+		grid-column-start: 3;
 	}
 }
