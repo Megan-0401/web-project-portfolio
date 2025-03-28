@@ -46,6 +46,10 @@ a {
   width: 100%;
 }
 
+.about__para {
+  margin-bottom: 30px;
+}
+
 .projects__btn {
   border: none;
   border-radius: 100%;
@@ -106,9 +110,6 @@ a {
   }
   .about__margin {
     margin-bottom: 70px;
-  }
-  .about__para {
-    margin-bottom: 30px;
   }
   .skills {
     display: none;
@@ -202,8 +203,34 @@ a {
   #header-title {
     margin-bottom: 90px;
   }
+  .about {
+    display: grid;
+    grid-template-columns: 60% 15% 25%;
+  }
+  .about__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about__margin {
+    margin-bottom: 50px;
+  }
   #about-image {
     height: 558px;
+    grid-column-start: 3;
+  }
+  .skills__text {
+    display: flex;
+    justify-content: space-between;
+  }
+  .skills__desc {
+    font-size: 16px;
+    padding-right: 275px;
+    padding-left: 220px;
+  }
+  .skills__skill-icons {
+    list-style: none;
+    display: flex;
   }
 }
 

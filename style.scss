@@ -48,6 +48,11 @@ a {
 .nav-bar {
 	width: 100%;
 }
+.about {
+	&__para {
+		margin-bottom: 30px;
+	}
+}
 .projects {
 	&__btn {
 		@include round-btn-style;
@@ -111,9 +116,6 @@ a {
 	.about {
 		&__margin {
 			margin-bottom: typography.$s-about-margin;
-		}
-		&__para {
-			margin-bottom: 30px;
 		}
 	}
 	.skills {
@@ -213,7 +215,35 @@ a {
 	#header-title {
 		margin-bottom: 90px;
 	}
+	.about {
+		display: grid;
+		grid-template-columns: 60% 15% 25%;
+		&__info {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		&__margin {
+			margin-bottom: 50px;
+		}
+	}
 	#about-image {
 		height: 558px;
+		grid-column-start: 3;
+	}
+	.skills {
+		&__text {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__desc {
+			font-size: typography.$lg-skills-font-size;
+			padding-right: 275px;
+			padding-left: 220px;
+		}
+		&__skill-icons {
+			list-style: none;
+			display: flex;
+		}
 	}
 }
