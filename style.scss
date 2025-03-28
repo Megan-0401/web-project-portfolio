@@ -24,6 +24,9 @@ h3 {
 	font-family: typography.$header-font-family;
 	color: palette.$col-text1;
 }
+h3 {
+	font-weight: bold;
+}
 
 h4 {
 	font-family: typography.$header-font-family;
@@ -34,6 +37,12 @@ p {
 	font-family: typography.$para-font-family;
 	color: palette.$col-text2;
 	line-height: 1.5;
+}
+a {
+	text-decoration: none;
+	color: palette.$col-text1;
+	font-family: typography.$para-font-family;
+	font-size: typography.$lg-para-font-size;
 }
 
 .nav-bar {
@@ -75,9 +84,6 @@ p {
 	h4 {
 		font-size: typography.$s-secondary-header-font-size;
 	}
-	h3 {
-		font-weight: bold;
-	}
 	p {
 		font-size: typography.$s-para-font-size;
 	}
@@ -104,7 +110,7 @@ p {
 	}
 	.about {
 		&__margin {
-			margin-bottom: typography.$s-primary-margin;
+			margin-bottom: typography.$s-about-margin;
 		}
 		&__para {
 			margin-bottom: 30px;
@@ -162,5 +168,52 @@ p {
 			height: 55px;
 			margin: 10px;
 		}
+	}
+}
+
+@include media-queries.desktop {
+	h1 {
+		font-size: typography.$lg-secondary-header-font-size;
+	}
+	h2 {
+		font-size: typography.$lg-primary-header-font-size;
+	}
+	h3,
+	h4 {
+		font-size: typography.$lg-secondary-header-font-size;
+	}
+	p {
+		font-size: typography.$lg-para-font-size;
+	}
+	.nav-bar {
+		margin-top: 66px;
+		margin-bottom: typography.$lg-nav-margin;
+		display: flex;
+		justify-content: space-around;
+	}
+	.navigation {
+		display: flex;
+		flex-flow: row wrap;
+		list-style: none;
+		align-items: center;
+		&__link {
+			margin-left: 100px;
+		}
+	}
+	.section {
+		margin: 0px typography.$lg-section-margin-side typography.$lg-section-margin-side typography.$lg-section-margin-btm;
+	}
+	.header {
+		padding-left: 50px;
+		padding-right: 50px;
+		&__para {
+			margin-right: 950px;
+		}
+	}
+	#header-title {
+		margin-bottom: 90px;
+	}
+	#about-image {
+		height: 558px;
 	}
 }

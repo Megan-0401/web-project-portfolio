@@ -20,6 +20,10 @@ h3 {
   color: #fafaff;
 }
 
+h3 {
+  font-weight: bold;
+}
+
 h4 {
   font-family: Garamond;
   color: #e4d9ff;
@@ -29,6 +33,13 @@ p {
   font-family: Helvetica;
   color: #e4d9ff;
   line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #fafaff;
+  font-family: Helvetica;
+  font-size: 20px;
 }
 
 .nav-bar {
@@ -70,9 +81,6 @@ p {
   h3,
   h4 {
     font-size: 32px;
-  }
-  h3 {
-    font-weight: bold;
   }
   p {
     font-size: 16px;
@@ -150,6 +158,52 @@ p {
     width: 55px;
     height: 55px;
     margin: 10px;
+  }
+}
+@media only screen and (min-width: 391px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 128px;
+  }
+  h3,
+  h4 {
+    font-size: 48px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .nav-bar {
+    margin-top: 66px;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .navigation {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    align-items: center;
+  }
+  .navigation__link {
+    margin-left: 100px;
+  }
+  .section {
+    margin: 0px 135px 135px 120px;
+  }
+  .header {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .header__para {
+    margin-right: 950px;
+  }
+  #header-title {
+    margin-bottom: 90px;
+  }
+  #about-image {
+    height: 558px;
   }
 }
 
