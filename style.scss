@@ -172,6 +172,11 @@ a {
 		&__margin {
 			margin-bottom: typography.$s-about-margin;
 		}
+		&__para {
+			&--desktop {
+				display: none;
+			}
+		}
 	}
 	.skills {
 		display: none;
@@ -262,6 +267,11 @@ a {
 		}
 		&__margin {
 			margin-bottom: 50px;
+		}
+		&__para {
+			&--mobile {
+				display: none;
+			}
 		}
 	}
 	#about-image {
