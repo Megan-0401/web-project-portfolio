@@ -19,3 +19,10 @@ body {
 	align-items: center;
 	background-color: black;
 }
+
+@include media-queries.desktop {
+	.image-responsive {
+		height: auto;
+		width: 55%;
+	}
+}

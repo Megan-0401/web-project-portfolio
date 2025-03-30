@@ -1,3 +1,4 @@
+@use "media-queries";
 @use "palette";
 
 @mixin round-btn-style {
@@ -12,8 +13,6 @@
 		@include round-btn-style;
 		&--portfolio {
 			background-color: black;
-			width: 45px;
-			height: 45px;
 		}
 		&--footer {
 			width: 55px;
@@ -21,6 +20,28 @@
 		}
 		&--image-center {
 			padding-top: 5px;
+		}
+	}
+}
+
+@include media-queries.desktop {
+	.container {
+		&__btn {
+			&--portfolio {
+				width: 2.4vw;
+				height: 2.4vw;
+			}
+		}
+	}
+}
+
+@include media-queries.mobile {
+	.container {
+		&__btn {
+			&--portfolio {
+				width: 45px;
+				height: 45px;
+			}
 		}
 	}
 }

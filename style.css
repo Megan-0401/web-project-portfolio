@@ -19,21 +19,21 @@
   margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 391px) {
+@media only screen and (min-width: 577px) {
   .section {
     margin: 0px 6.75vw 120px;
   }
   .section__title {
-    font-size: 48px;
+    font-size: 2.5vw;
   }
   .section__title--lg {
-    font-size: 128px;
+    font-size: 6.75vw;
   }
   .section__main {
-    font-size: 20px;
+    font-size: 1.05vw;
   }
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 576px) {
   .section {
     margin: 0px 6.5vw 70px;
   }
@@ -51,18 +51,18 @@
   text-decoration: none;
   color: #fafaff;
   font-family: Helvetica;
-  font-size: 20px;
+  font-size: 1.05vw;
 }
 
-@media only screen and (min-width: 391px) {
+@media only screen and (min-width: 577px) {
   #nav-bar {
     margin-top: 66px;
     margin-bottom: 90px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   #nav-name {
-    font-size: 48px;
+    font-size: 2.5vw;
   }
   .navigation {
     display: flex;
@@ -74,7 +74,7 @@
     margin-left: 100px;
   }
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 576px) {
   #nav-bar {
     margin-top: 20px;
     margin-bottom: 108px;
@@ -87,7 +87,7 @@
     display: none;
   }
 }
-@media only screen and (min-width: 391px) {
+@media only screen and (min-width: 577px) {
   #header-margin {
     margin-bottom: 90px;
   }
@@ -99,7 +99,7 @@
     margin-right: 50vw;
   }
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 576px) {
   #header-margin {
     margin-bottom: 98px;
   }
@@ -109,7 +109,7 @@
     margin-bottom: 70px;
   }
 }
-@media only screen and (min-width: 391px) {
+@media only screen and (min-width: 577px) {
   .about {
     display: grid;
     grid-template-columns: 60% 15% 25%;
@@ -130,7 +130,7 @@
     margin-bottom: 50px;
   }
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 576px) {
   .about__image {
     width: 69vw;
     margin-bottom: 40px;
@@ -138,7 +138,7 @@
   .about__image--hide-on-mobile {
     display: none;
   }
-  #about-margin {
+  #about-title {
     margin-bottom: 70px;
   }
 }
@@ -148,7 +148,7 @@
   margin-bottom: 70px;
 }
 .skills__brief {
-  font-size: 16px;
+  font-size: 0.83vw;
   margin-left: 11.5vw;
   margin-right: 14.5vw;
 }
@@ -163,11 +163,12 @@
 }
 .skill-icons__text {
   color: #fafaff;
-  font-size: 16px;
+  font-size: 0.83vw;
   text-align: center;
+  margin-top: 15px;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 576px) {
   .skills {
     display: none;
   }
@@ -197,13 +198,13 @@
   display: flex;
 }
 .subtitle__text {
-  font-size: 10px;
+  font-size: 0.75vw;
   font-family: Helvetica;
   color: #e4d9ff;
-  margin: 30px;
+  margin: 30px 1.65vw;
 }
 
-@media only screen and (min-width: 391px) {
+@media only screen and (min-width: 577px) {
   #portfolio-title {
     margin-bottom: 50px;
   }
@@ -216,17 +217,17 @@
     margin-right: 9.75vw;
   }
   .projects__title {
-    font-size: 48px;
+    font-size: 2.5vw;
   }
   .projects__preview {
-    width: 472px;
-    height: 265px;
+    width: 24.7vw;
+    height: 14vw;
   }
   .projects__info {
     margin-top: 10px;
   }
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 576px) {
   #portfolio-title {
     margin-bottom: 20px;
   }
@@ -256,7 +257,7 @@
   color: #fafaff;
 }
 
-@media only screen and (min-width: 391px) {
+@media only screen and (min-width: 577px) {
   .contact__title {
     padding-bottom: 60px;
   }
@@ -266,7 +267,7 @@
     font-size: 24px;
   }
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 576px) {
   .contact__title {
     text-align: center;
     padding: 40px 0px;
@@ -287,8 +288,6 @@
 }
 .container__btn--portfolio {
   background-color: black;
-  width: 45px;
-  height: 45px;
 }
 .container__btn--footer {
   width: 55px;
@@ -298,6 +297,18 @@
   padding-top: 5px;
 }
 
+@media only screen and (min-width: 577px) {
+  .container__btn--portfolio {
+    width: 2.4vw;
+    height: 2.4vw;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container__btn--portfolio {
+    width: 45px;
+    height: 45px;
+  }
+}
 body {
   background-color: #30343f;
 }
@@ -307,6 +318,13 @@ body {
   justify-content: center;
   align-items: center;
   background-color: black;
+}
+
+@media only screen and (min-width: 577px) {
+  .image-responsive {
+    height: auto;
+    width: 55%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

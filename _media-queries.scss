@@ -1,5 +1,5 @@
 // Breakpoints
-$mobile: 390px;
+$mobile: 576px;
 
 @mixin mobile {
 	@media only screen and (max-width: $mobile) {

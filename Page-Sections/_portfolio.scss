@@ -28,7 +28,7 @@
 		font-size: typography.$lg-subtitle-font-size;
 		font-family: typography.$para-font-family;
 		color: palette.$secondary-text;
-		margin: 30px;
+		margin: 30px 1.65vw;
 	}
 }
 
@@ -47,8 +47,8 @@
 			font-size: typography.$lg-secondary-header-font-size;
 		}
 		&__preview {
-			width: 472px;
-			height: 265px;
+			width: 24.7vw;
+			height: 14vw;
 		}
 		&__info {
 			margin-top: 10px;
