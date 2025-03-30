@@ -1,0 +1,25 @@
+@use "../media-queries";
+
+@include media-queries.desktop {
+	#header-margin {
+		margin-bottom: 90px;
+	}
+	.header {
+		padding-left: 50px;
+		padding-right: 50px;
+		&__main {
+			margin-right: 50vw;
+		}
+	}
+}
+
+@include media-queries.mobile {
+	#header-margin {
+		margin-bottom: 98px;
+	}
+	.header {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 70px;
+	}
+}

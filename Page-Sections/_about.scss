@@ -1,0 +1,14 @@
+@use "../media-queries";
+
+@include media-queries.desktop {
+	#about-image {
+		width: 19.5vw;
+	}
+}
+
+@include media-queries.mobile {
+	#about-image {
+		width: 69vw;
+		margin-bottom: 40px;
+	}
+}

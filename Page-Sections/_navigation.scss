@@ -1,0 +1,49 @@
+@use "../media-queries";
+@use "../typography";
+@use "../palette";
+
+.navigation {
+	&__link {
+		text-decoration: none;
+		color: palette.$primary-text;
+		font-family: typography.$para-font-family;
+		font-size: typography.$lg-para-font-size;
+	}
+}
+
+@include media-queries.desktop {
+	#nav-bar {
+		margin-top: 66px;
+		margin-bottom: 90px;
+		display: flex;
+		justify-content: space-around;
+	}
+	#nav-name {
+		font-size: typography.$lg-secondary-header-font-size;
+	}
+	.navigation {
+		display: flex;
+		flex-flow: row wrap;
+		list-style: none;
+		align-items: center;
+		&__item {
+			margin-left: 100px;
+		}
+	}
+}
+
+@include media-queries.mobile {
+	#nav-bar {
+		margin-top: 20px;
+		margin-bottom: 108px;
+	}
+	#nav-name {
+		font-size: typography.$s-name-font-size;
+		text-align: center;
+	}
+	.navigation {
+		&__item {
+			display: none;
+		}
+	}
+}

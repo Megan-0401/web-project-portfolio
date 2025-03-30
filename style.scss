@@ -1,6 +1,10 @@
 @use "typography";
 @use "palette";
 @use "media-queries";
+@use "sections";
+@use "Page-Sections/navigation";
+@use "Page-Sections/header";
+@use "Page-Sections/about";
 
 @mixin round-btn-style {
 	border: none;
@@ -11,47 +15,9 @@ body {
 	background-color: palette.$col-background;
 }
 
-h1,
-h2,
-h3,
-h4 {
-	font-weight: lighter;
-}
-
-h1,
-h2,
-h3 {
-	font-family: typography.$header-font-family;
-	color: palette.$col-text1;
-}
-h3 {
-	font-weight: bold;
-}
-
 h4 {
 	font-family: typography.$header-font-family;
-	color: palette.$col-text2;
-}
-
-p {
-	font-family: typography.$para-font-family;
-	color: palette.$col-text2;
-	line-height: 1.5;
-}
-a {
-	text-decoration: none;
-	color: palette.$col-text1;
-	font-family: typography.$para-font-family;
-	font-size: typography.$lg-para-font-size;
-}
-
-.nav-bar {
-	width: 100%;
-}
-.about {
-	&__para {
-		margin-bottom: 30px;
-	}
+	color: palette.$secondary-text;
 }
 .skills {
 	&__text {
@@ -75,7 +41,7 @@ a {
 }
 .skill-icons {
 	&__text {
-		color: palette.$col-text1;
+		color: palette.$primary-text;
 		font-size: typography.$lg-skills-font-size;
 		text-align: center;
 	}
@@ -107,9 +73,9 @@ a {
 	flex-direction: column;
 	align-items: center;
 	&__btn {
-		border: 2px solid palette.$col-text1;
+		border: 2px solid palette.$primary-text;
 		background: none;
-		color: palette.$col-text1;
+		color: palette.$primary-text;
 	}
 }
 .footer {
@@ -130,43 +96,11 @@ a {
 }
 
 @include media-queries.mobile {
-	.nav-bar {
-		margin-top: 20px;
-	}
-	h1 {
-		font-size: typography.$s-name-font-size;
-		text-align: center;
-	}
-	h2 {
-		font-size: typography.$s-primary-header-font-size;
-	}
-	h3,
 	h4 {
 		font-size: typography.$s-secondary-header-font-size;
 	}
 	p {
 		font-size: typography.$s-para-font-size;
-	}
-	.section {
-		margin: typography.$s-margin;
-	}
-	.navigation {
-		&__link {
-			display: none;
-		}
-	}
-	.header {
-		margin-top: 108px;
-		display: flex;
-		flex-direction: column;
-		margin-bottom: 70px;
-	}
-	#header-title {
-		margin-bottom: 98px;
-	}
-	#about-image {
-		height: 400px;
-		margin-bottom: 40px;
 	}
 	.about {
 		&__margin {
@@ -216,46 +150,11 @@ a {
 }
 
 @include media-queries.desktop {
-	h1 {
-		font-size: typography.$lg-secondary-header-font-size;
-	}
-	h2 {
-		font-size: typography.$lg-primary-header-font-size;
-	}
-	h3,
 	h4 {
 		font-size: typography.$lg-secondary-header-font-size;
 	}
 	p {
 		font-size: typography.$lg-para-font-size;
-	}
-	.nav-bar {
-		margin-top: 66px;
-		margin-bottom: typography.$lg-nav-margin;
-		display: flex;
-		justify-content: space-around;
-	}
-	.navigation {
-		display: flex;
-		flex-flow: row wrap;
-		list-style: none;
-		align-items: center;
-		&__link {
-			margin-left: 100px;
-		}
-	}
-	.section {
-		margin: 0px typography.$lg-section-margin-side typography.$lg-section-margin-side typography.$lg-section-margin-btm;
-	}
-	.header {
-		padding-left: 50px;
-		padding-right: 50px;
-		&__para {
-			margin-right: 950px;
-		}
-	}
-	#header-title {
-		margin-bottom: 90px;
 	}
 	.about {
 		display: grid;
@@ -275,7 +174,6 @@ a {
 		}
 	}
 	#about-image {
-		height: 558px;
 		grid-column-start: 3;
 	}
 	.portfolio {

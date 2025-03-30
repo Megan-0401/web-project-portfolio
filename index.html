@@ -7,31 +7,31 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<header class="nav-bar">
-			<h1>MEGAN O'CONNOR.</h1>
-				<ul class="navigation">
-					<li class="navigation__link"><a href="">About</a></li>
-					<li class="navigation__link"><a href="">Portfolio</a></li>
-					<li class="navigation__link"><a href="">Contact</a></li>
-				</ul>
+		<header id="nav-bar">
+			<h1 class="section__title" id="nav-name">MEGAN O'CONNOR.</h1>
+			<ul class="navigation">
+				<li class="navigation__item"><a class="navigation__link" href="">About</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="">Portfolio</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="">Contact</a></li>
+			</ul>
 		</header>
 		<main>
 			<section class="section header">
-				<h2 id="header-title">Junior Software Developer.</h2>
-				<p class="header__para">
+				<h2 class="section__title section__title--lg" id="header-margin">Junior Software Developer.</h2>
+				<p class="header__main section__main">
 					Nunc aliquam faucibus ac in donec commodo id. Dui viverra sit feugiat massa pellentesque arcu at quis. Diam, elementum morbi
 					pellentesque blandit suscipit sit. Neque, et consequat phasellus augue neque mollis tempor.
-				</p class="header__para">
+				</p>
 			</section>
 			<section class="section about">
 				<div class="about__info">
-					<h3 class="about__margin">ABOUT.</h3>
-					<p class="about__para about__para--desktop">
+					<h3 class="about__margin section__title section__title--bold">ABOUT.</h3>
+					<p class="section__main--margin about__para about__para--desktop section__main">
 						Interdum sollicitudin fringilla quisque vivamus. Eget viverra metus, ultrices aliquet. Velit, tincidunt sed sed proin
 						pellentesque dictum pulvinar. Arcu diam massa elementum tempor lectus. Aliquam lacus lacus diam eget quisque purus etiam mi,
 						curabitur. Imperdiet sed felis ipsum, porttitor ipsum faucibus neque cursus. Quis blandit quisque sed diam at tellus sagittis.
 					</p>
-					<p class="about__para about__para--desktop">
+					<p class="section__main--margin about__para about__para--desktop section__main">
 						Urna, vel nibh lectus condimentum. Purus pellentesque scelerisque tristique in vestibulum augue accumsan. Eu morbi porttitor
 						dolor ipsum dui ultrices viverra nisi, leo. Erat porta risus, id enim adipiscing sit amet at. Tortor, posuere pulvinar
 						volutpat magnis felis suspendisse ut. Tincidunt in pulvinar suspendisse lectus enim, tortor mattis ut. Integer auctor aliquet
@@ -39,22 +39,25 @@
 					</p>
 				</div>
 				<img id="about-image" src="image.jpg" alt="Profile Photo" />
-					<p class="about__para about__para--mobile">
-						Interdum sollicitudin fringilla quisque vivamus. Eget viverra metus, ultrices aliquet. Velit, tincidunt sed sed proin
-						pellentesque dictum pulvinar. Arcu diam massa elementum tempor lectus. Aliquam lacus lacus diam eget quisque purus etiam mi,
-						curabitur. Imperdiet sed felis ipsum, porttitor ipsum faucibus neque cursus. Quis blandit quisque sed diam at tellus sagittis.
-					</p>
-					<p class="about__para about__para--mobile">
-						Urna, vel nibh lectus condimentum. Purus pellentesque scelerisque tristique in vestibulum augue accumsan. Eu morbi porttitor
-						dolor ipsum dui ultrices viverra nisi, leo. Erat porta risus, id enim adipiscing sit amet at. Tortor, posuere pulvinar
-						volutpat magnis felis suspendisse ut. Tincidunt in pulvinar suspendisse lectus enim, tortor mattis ut. Integer auctor aliquet
-						tincidunt rhoncus at.
-					</p>
+				<p class="section__main--margin about__para about__para--mobile section__main">
+					Interdum sollicitudin fringilla quisque vivamus. Eget viverra metus, ultrices aliquet. Velit, tincidunt sed sed proin pellentesque
+					dictum pulvinar. Arcu diam massa elementum tempor lectus. Aliquam lacus lacus diam eget quisque purus etiam mi, curabitur.
+					Imperdiet sed felis ipsum, porttitor ipsum faucibus neque cursus. Quis blandit quisque sed diam at tellus sagittis.
+				</p>
+				<p class="section__main--margin about__para about__para--mobile section__main">
+					Urna, vel nibh lectus condimentum. Purus pellentesque scelerisque tristique in vestibulum augue accumsan. Eu morbi porttitor dolor
+					ipsum dui ultrices viverra nisi, leo. Erat porta risus, id enim adipiscing sit amet at. Tortor, posuere pulvinar volutpat magnis
+					felis suspendisse ut. Tincidunt in pulvinar suspendisse lectus enim, tortor mattis ut. Integer auctor aliquet tincidunt rhoncus
+					at.
+				</p>
 			</section>
 			<section class="section skills">
 				<div class="skills__text">
-					<h3 class="section__title">SKILLS.</h3>
-					<p class="skills__desc">Egestas dictumst enim dui ante nisl risus commodo. Pellentesque dignissim praesent purus in neque erat et. Cras donec ut orci eget neque bibendum cras. Vitae, ultricies arcu pretium duis.</p>
+					<h3 class="section__title section__title--bold">SKILLS.</h3>
+					<p class="skills__desc section__main">
+						Egestas dictumst enim dui ante nisl risus commodo. Pellentesque dignissim praesent purus in neque erat et. Cras donec ut orci
+						eget neque bibendum cras. Vitae, ultricies arcu pretium duis.
+					</p>
 				</div>
 				<ul class="skills__skill-icons skill-icons">
 					<li class="skills__skill-icons--margin">
@@ -96,24 +99,24 @@
 				</ul>
 			</section>
 			<section class="section portfolio">
-				<h3 class="portfolio__title">PORTFOLIO.</h3>
+				<h3 class="portfolio__title section__title section__title--bold">PORTFOLIO.</h3>
 				<div class="projects">
 					<div>
 						<div class="projects__display"></div>
 						<div class="projects__info">
 							<h4 class="projects__title">PROJECT 1</h4>
 							<div class="projects__btns">
-									<button class="projects__btn">
-										<img src="Vectors/Preview.png" alt="Preview">
-									</button>
-									<button class="projects__btn">
-										<img src="Vectors/Code.png" alt="Code">
-									</button>
+								<button class="projects__btn">
+									<img src="Vectors/Preview.png" alt="Preview" />
+								</button>
+								<button class="projects__btn">
+									<img src="Vectors/Code.png" alt="Code" />
+								</button>
 							</div>
 						</div>
 						<div class="projects__subtitles">
-								<p class="projects__subtitle">REACT</p>
-								<p class="projects__subtitle">SCSS</p>
+							<p class="projects__subtitle">REACT</p>
+							<p class="projects__subtitle">SCSS</p>
 						</div>
 					</div>
 					<div id="project2">
@@ -121,17 +124,17 @@
 						<div class="projects__info">
 							<h4 class="projects__title">PROJECT 2</h4>
 							<div class="projects__btns">
-									<button class="projects__btn">
-										<img src="Vectors/Preview.png" alt="Preview">
-									</button>
-									<button class="projects__btn">
-										<img src="Vectors/Code.png" alt="Code">
-									</button>
+								<button class="projects__btn">
+									<img src="Vectors/Preview.png" alt="Preview" />
+								</button>
+								<button class="projects__btn">
+									<img src="Vectors/Code.png" alt="Code" />
+								</button>
 							</div>
 						</div>
 						<div class="projects__subtitles">
-								<p class="projects__subtitle">REACT</p>
-								<p class="projects__subtitle">SCSS</p>
+							<p class="projects__subtitle">REACT</p>
+							<p class="projects__subtitle">SCSS</p>
 						</div>
 					</div>
 					<div>
@@ -139,17 +142,17 @@
 						<div class="projects__info">
 							<h4 class="projects__title">PROJECT 3</h4>
 							<div class="projects__btns">
-									<button class="projects__btn">
-										<img src="Vectors/Preview.png" alt="Preview">
-									</button>
-									<button class="projects__btn">
-										<img src="Vectors/Code.png" alt="Code">
-									</button>
+								<button class="projects__btn">
+									<img src="Vectors/Preview.png" alt="Preview" />
+								</button>
+								<button class="projects__btn">
+									<img src="Vectors/Code.png" alt="Code" />
+								</button>
 							</div>
 						</div>
 						<div class="projects__subtitles">
-								<p class="projects__subtitle">REACT</p>
-								<p class="projects__subtitle">SCSS</p>
+							<p class="projects__subtitle">REACT</p>
+							<p class="projects__subtitle">SCSS</p>
 						</div>
 					</div>
 					<div id="project4">
@@ -157,36 +160,36 @@
 						<div class="projects__info">
 							<h4 class="projects__title">PROJECT 4</h4>
 							<div class="projects__btns">
-									<button class="projects__btn">
-										<img src="Vectors/Preview.png" alt="Preview">
-									</button>
-									<button class="projects__btn">
-										<img src="Vectors/Code.png" alt="Code">
-									</button>
+								<button class="projects__btn">
+									<img src="Vectors/Preview.png" alt="Preview" />
+								</button>
+								<button class="projects__btn">
+									<img src="Vectors/Code.png" alt="Code" />
+								</button>
 							</div>
 						</div>
 						<div class="projects__subtitles">
-								<p class="projects__subtitle">REACT</p>
-								<p class="projects__subtitle">SCSS</p>
+							<p class="projects__subtitle">REACT</p>
+							<p class="projects__subtitle">SCSS</p>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section class="section contact">
-				<h2 class="contact__title">Get in touch.</h2>
+				<h2 class="contact__title section__title section__title--lg">Get in touch.</h2>
 				<button class="contact__btn">CONTACT</button>
 			</section>
 		</main>
 		<footer class="footer">
-				<button class="footer__btn">
-					<img class="footer__btn--center" src="Vectors/LinkedIn.png" alt="LinkedIn">
-				</button>
-				<button class="footer__btn">
-					<img class="footer__btn--center" src="Vectors/GitHub.png" alt="GitHub">
-				</button>
-				<button class="footer__btn">
-					<img class="footer__btn--center" src="Vectors/CV.png" alt="CV">
-				</button>
+			<button class="footer__btn">
+				<img class="footer__btn--center" src="Vectors/LinkedIn.png" alt="LinkedIn" />
+			</button>
+			<button class="footer__btn">
+				<img class="footer__btn--center" src="Vectors/GitHub.png" alt="GitHub" />
+			</button>
+			<button class="footer__btn">
+				<img class="footer__btn--center" src="Vectors/CV.png" alt="CV" />
+			</button>
 		</footer>
 	</body>
 </html>

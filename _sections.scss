@@ -1,0 +1,46 @@
+@use "typography";
+@use "palette";
+@use "media-queries";
+
+.section {
+	&__title {
+		color: palette.$primary-text;
+		font-weight: lighter;
+		font-family: typography.$header-font-family;
+		&--bold {
+			font-weight: bold;
+		}
+	}
+	&__main {
+		color: palette.$secondary-text;
+		font-family: typography.$para-font-family;
+		line-height: 1.5;
+		&--margin {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@include media-queries.desktop {
+	.section {
+		margin: 0px typography.$lg-section-margin-side typography.$lg-section-margin-btm;
+		&__title {
+			font-size: typography.$lg-secondary-header-font-size;
+			&--lg {
+				font-size: typography.$lg-primary-header-font-size;
+			}
+		}
+	}
+}
+
+@include media-queries.mobile {
+	.section {
+		margin: 0px typography.$s-section-margin-side typography.$s-section-margin-btm;
+		&__title {
+			font-size: typography.$s-secondary-header-font-size;
+			&--lg {
+				font-size: typography.$s-primary-header-font-size;
+			}
+		}
+	}
+}
