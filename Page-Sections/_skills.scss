@@ -1,0 +1,35 @@
+@use "../media-queries";
+@use "../typography";
+@use "../palette";
+
+.skills {
+	&__text {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 70px;
+	}
+	&__brief {
+		font-size: typography.$lg-skills-font-size;
+		margin-left: 11.5vw;
+		margin-right: 14.5vw;
+	}
+}
+.skill-icons {
+	list-style: none;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px 3.1vw;
+	&__text {
+		color: palette.$primary-text;
+		font-size: typography.$lg-skills-font-size;
+		text-align: center;
+	}
+}
+
+@include media-queries.mobile {
+	.skills {
+		display: none;
+	}
+}

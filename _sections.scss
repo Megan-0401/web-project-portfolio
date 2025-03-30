@@ -30,6 +30,9 @@
 				font-size: typography.$lg-primary-header-font-size;
 			}
 		}
+		&__main {
+			font-size: typography.$lg-para-font-size;
+		}
 	}
 }
 
@@ -41,6 +44,9 @@
 			&--lg {
 				font-size: typography.$s-primary-header-font-size;
 			}
+		}
+		&__main {
+			font-size: typography.$s-para-font-size;
 		}
 	}
 }

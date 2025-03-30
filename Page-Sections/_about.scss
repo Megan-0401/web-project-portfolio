@@ -1,14 +1,39 @@
 @use "../media-queries";
+@use "../typography";
 
 @include media-queries.desktop {
-	#about-image {
-		width: 19.5vw;
+	.about {
+		display: grid;
+		grid-template-columns: 60% 15% 25%;
+		&__text {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		&__image {
+			width: 19.5vw;
+			grid-column-start: 3;
+			&--hide-on-desktop {
+				display: none;
+			}
+		}
+	}
+	#about-title {
+		margin-bottom: 50px;
 	}
 }
 
 @include media-queries.mobile {
-	#about-image {
-		width: 69vw;
-		margin-bottom: 40px;
+	.about {
+		&__image {
+			width: 69vw;
+			margin-bottom: 40px;
+			&--hide-on-mobile {
+				display: none;
+			}
+		}
+	}
+	#about-margin {
+		margin-bottom: 70px;
 	}
 }

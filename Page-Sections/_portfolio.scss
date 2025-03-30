@@ -1,0 +1,79 @@
+@use "../media-queries";
+@use "../typography";
+@use "../palette";
+
+.projects {
+	&__preview {
+		background-color: black;
+	}
+	&__info {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__title {
+		font-weight: lighter;
+		font-family: typography.$header-font-family;
+		color: palette.$secondary-text;
+	}
+}
+#project2 {
+	grid-column-start: 3;
+}
+#project4 {
+	grid-column-start: 3;
+}
+.subtitle {
+	display: flex;
+	&__text {
+		font-size: typography.$lg-subtitle-font-size;
+		font-family: typography.$para-font-family;
+		color: palette.$secondary-text;
+		margin: 30px;
+	}
+}
+
+@include media-queries.desktop {
+	#portfolio-title {
+		margin-bottom: 50px;
+	}
+	.projects {
+		display: grid;
+		grid-template-columns: 40% 20% 40%;
+		grid-template-rows: 50% 50%;
+		&--margin {
+			margin-right: 9.75vw;
+		}
+		&__title {
+			font-size: typography.$lg-secondary-header-font-size;
+		}
+		&__preview {
+			width: 472px;
+			height: 265px;
+		}
+		&__info {
+			margin-top: 10px;
+		}
+	}
+}
+
+@include media-queries.mobile {
+	#portfolio-title {
+		margin-bottom: 20px;
+	}
+	.projects {
+		&__title {
+			font-size: typography.$s-secondary-header-font-size;
+		}
+		&__preview {
+			height: 265px;
+			margin: 10px 0px;
+		}
+		&__info {
+			margin-bottom: 50px;
+			margin-top: 20px;
+		}
+	}
+	.subtitle {
+		display: none;
+	}
+}

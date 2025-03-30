@@ -1,0 +1,41 @@
+@use "../media-queries";
+@use "../typography";
+@use "../palette";
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__btn {
+		border: 2px solid palette.$primary-text;
+		background: none;
+		color: palette.$primary-text;
+	}
+}
+
+@include media-queries.desktop {
+	.contact {
+		&__title {
+			padding-bottom: 60px;
+		}
+		&__btn {
+			width: 320px;
+			height: 80px;
+			font-size: typography.$lg-btn-font-size;
+		}
+	}
+}
+
+@include media-queries.mobile {
+	.contact {
+		&__title {
+			text-align: center;
+			padding: 40px 0px;
+		}
+		&__btn {
+			width: 270px;
+			height: 80px;
+			font-size: typography.$s-button-font-size;
+		}
+	}
+}

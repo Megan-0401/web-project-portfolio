@@ -1,0 +1,26 @@
+@use "palette";
+
+@mixin round-btn-style {
+	border: none;
+	border-radius: 100%;
+}
+
+.container {
+	display: flex;
+	gap: 10px;
+	&__btn {
+		@include round-btn-style;
+		&--portfolio {
+			background-color: black;
+			width: 45px;
+			height: 45px;
+		}
+		&--footer {
+			width: 55px;
+			height: 55px;
+		}
+		&--image-center {
+			padding-top: 5px;
+		}
+	}
+}
