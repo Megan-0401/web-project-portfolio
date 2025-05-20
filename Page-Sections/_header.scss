@@ -1,14 +1,23 @@
 @use "../media-queries";
 
-@include media-queries.desktop {
+#header-margin {
+	margin-bottom: 90px;
+}
+.header {
+	padding-left: 50px;
+	padding-right: 50px;
+	&__main {
+		margin-right: 50vw;
+	}
+}
+
+@include media-queries.tablet {
 	#header-margin {
-		margin-bottom: 90px;
+		margin-bottom: 52px;
 	}
 	.header {
-		padding-left: 50px;
-		padding-right: 50px;
 		&__main {
-			margin-right: 50vw;
+			margin-right: 35vw;
 		}
 	}
 }
@@ -21,5 +30,8 @@
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 70px;
+		&__main {
+			margin-right: 30vw;
+		}
 	}
 }

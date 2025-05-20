@@ -24,8 +24,22 @@
 	&__text {
 		color: palette.$primary-text;
 		font-size: typography.$lg-skills-font-size;
+		font-family: typography.$para-font-family;
 		text-align: center;
 		margin-top: 15px;
+	}
+}
+
+@include media-queries.tablet {
+	.skills {
+		&__brief {
+			font-size: typography.$m-skills-font-size;
+		}
+	}
+	.skill-icons {
+		&__text {
+			font-size: typography.$m-skills-font-size;
+		}
 	}
 }
 

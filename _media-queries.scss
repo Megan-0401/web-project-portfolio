@@ -1,5 +1,6 @@
 // Breakpoints
-$mobile: 576px;
+$mobile: 700px;
+$tablet: 1100px;
 
 @mixin mobile {
 	@media only screen and (max-width: $mobile) {
@@ -7,8 +8,14 @@ $mobile: 576px;
 	}
 }
 
+@mixin tablet {
+	@media only screen and (min-width: ($mobile + 1px)) and (max-width: $tablet) {
+		@content;
+	}
+}
+
 @mixin desktop {
-	@media only screen and (min-width: ($mobile + 1px)) {
+	@media only screen and (min-width: ($tablet + 1px)) {
 		@content;
 	}
 }

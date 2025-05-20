@@ -6,26 +6,19 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	&__title {
+		padding-bottom: 60px;
+	}
 	&__btn {
+		width: 320px;
+		height: 80px;
 		border: 2px solid palette.$primary-text;
 		background: none;
 		color: palette.$primary-text;
+		font-size: typography.$lg-btn-font-size;
 	}
 	&__btn:hover {
 		cursor: pointer;
-	}
-}
-
-@include media-queries.desktop {
-	.contact {
-		&__title {
-			padding-bottom: 60px;
-		}
-		&__btn {
-			width: 320px;
-			height: 80px;
-			font-size: typography.$lg-btn-font-size;
-		}
 	}
 }
 

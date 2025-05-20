@@ -15,24 +15,37 @@
 		color: palette.$secondary-text;
 	}
 }
-
-@include media-queries.desktop {
-	#nav-bar {
-		margin-top: 66px;
-		margin-bottom: 90px;
-		display: flex;
-		justify-content: space-between;
+#nav-bar {
+	margin-top: 66px;
+	margin-bottom: 90px;
+	display: flex;
+	justify-content: space-between;
+}
+#nav-name {
+	font-size: typography.$lg-secondary-header-font-size;
+}
+.navigation {
+	display: flex;
+	flex-flow: row wrap;
+	list-style: none;
+	align-items: center;
+	&__item {
+		margin-left: 100px;
 	}
+}
+
+@include media-queries.tablet {
 	#nav-name {
-		font-size: typography.$lg-secondary-header-font-size;
+		font-size: typography.$m-secondary-header-font-size;
 	}
 	.navigation {
-		display: flex;
-		flex-flow: row wrap;
-		list-style: none;
-		align-items: center;
+		gap: 50px;
+		flex-wrap: nowrap;
+		&__link {
+			font-size: typography.$m-para-font-size;
+		}
 		&__item {
-			margin-left: 100px;
+			margin-left: 0px;
 		}
 	}
 }

@@ -3,18 +3,30 @@
 @use "../palette";
 
 .projects {
+	display: grid;
+	grid-template-columns: 40% 20% 40%;
+	grid-template-rows: 50% 50%;
 	&__preview {
 		border: 3px solid white;
 		border-radius: 0.5vw;
+		width: 30vw;
 	}
 	&__info {
 		display: flex;
 		justify-content: space-between;
+		margin-top: 10px;
 	}
 	&__title {
 		font-weight: lighter;
 		font-family: typography.$header-font-family;
+		font-size: typography.$lg-secondary-header-font-size;
 		color: palette.$secondary-text;
+	}
+	&--margin {
+		margin-right: 9.75vw;
+	}
+	&--size {
+		width: 30vw;
 	}
 }
 #project2 {
@@ -36,29 +48,27 @@
 		margin: 30px 1.65vw;
 	}
 }
+#portfolio-title {
+	margin-bottom: 50px;
+}
 
-@include media-queries.desktop {
-	#portfolio-title {
-		margin-bottom: 50px;
-	}
+@include media-queries.tablet {
 	.projects {
-		display: grid;
-		grid-template-columns: 40% 20% 40%;
-		grid-template-rows: 50% 50%;
-		&--margin {
-			margin-right: 9.75vw;
-		}
 		&--size {
-			width: 30vw;
+			width: 35vw;
 		}
 		&__title {
-			font-size: typography.$lg-secondary-header-font-size;
+			font-size: typography.$m-secondary-header-font-size;
 		}
 		&__preview {
-			width: 30vw;
+			width: 35vw;
+			margin: 10px 0px;
 		}
-		&__info {
-			margin-top: 10px;
+	}
+	.subtitle {
+		&__text {
+			font-size: typography.$m-subtitle-font-size;
+			margin: 30px 1.65vw;
 		}
 	}
 }
@@ -68,6 +78,7 @@
 		margin-bottom: 20px;
 	}
 	.projects {
+		display: initial;
 		&--size {
 			width: 80vw;
 		}

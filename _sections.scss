@@ -3,10 +3,15 @@
 @use "media-queries";
 
 .section {
+	margin: 0px typography.$lg-section-margin-side typography.$lg-section-margin-btm;
 	&__title {
 		color: palette.$primary-text;
 		font-weight: lighter;
 		font-family: typography.$header-font-family;
+		font-size: typography.$lg-secondary-header-font-size;
+		&--lg {
+			font-size: typography.$lg-primary-header-font-size;
+		}
 		&--bold {
 			font-weight: bold;
 		}
@@ -14,6 +19,7 @@
 	&__main {
 		color: palette.$secondary-text;
 		font-family: typography.$para-font-family;
+		font-size: typography.$lg-para-font-size;
 		line-height: 1.5;
 		&--margin {
 			margin-bottom: 30px;
@@ -21,17 +27,17 @@
 	}
 }
 
-@include media-queries.desktop {
+@include media-queries.tablet {
 	.section {
-		margin: 0px typography.$lg-section-margin-side typography.$lg-section-margin-btm;
+		margin: 0px typography.$m-section-margin-side typography.$m-section-margin-btm;
 		&__title {
-			font-size: typography.$lg-secondary-header-font-size;
+			font-size: typography.$m-secondary-header-font-size;
 			&--lg {
-				font-size: typography.$lg-primary-header-font-size;
+				font-size: typography.$m-primary-header-font-size;
 			}
 		}
 		&__main {
-			font-size: typography.$lg-para-font-size;
+			font-size: typography.$m-para-font-size;
 		}
 	}
 }
