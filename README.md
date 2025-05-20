@@ -10,5 +10,5 @@ A portfolio website showcasing my projects. Created with HTML and SCSS.
 ## New features
 
 -   Added projects to portfolio section: TypeScript browser game, Java Snap game
+-   Responsive links & buttons
 -   Tablet friendly
--   Animated links & buttons

@@ -11,6 +11,9 @@
 		background: none;
 		color: palette.$primary-text;
 	}
+	&__btn:hover {
+		cursor: pointer;
+	}
 }
 
 @include media-queries.desktop {

@@ -6,6 +6,10 @@
 	border-radius: 100%;
 }
 
+@mixin btn-hover {
+	cursor: pointer;
+}
+
 .container {
 	display: flex;
 	gap: 10px;
@@ -15,9 +19,16 @@
 		&--portfolio {
 			background-color: black;
 		}
+		&--portfolio:hover {
+			background-color: palette.$portfolio-btn-hover;
+			@include btn-hover;
+		}
 		&--footer {
 			width: 55px;
 			height: 55px;
+		}
+		&--footer:hover {
+			@include btn-hover;
 		}
 		&--image-center {
 			padding-top: 5px;

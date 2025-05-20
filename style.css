@@ -53,6 +53,11 @@
   font-family: Helvetica;
   font-size: 1.05vw;
 }
+.navigation__link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #e4d9ff;
+}
 
 @media only screen and (min-width: 577px) {
   #nav-bar {
@@ -262,6 +267,9 @@
   background: none;
   color: #fafaff;
 }
+.contact__btn:hover {
+  cursor: pointer;
+}
 
 @media only screen and (min-width: 577px) {
   .contact__title {
@@ -296,9 +304,16 @@
 .container__btn--portfolio {
   background-color: black;
 }
+.container__btn--portfolio:hover {
+  background-color: #1a1a1b;
+  cursor: pointer;
+}
 .container__btn--footer {
   width: 55px;
   height: 55px;
+}
+.container__btn--footer:hover {
+  cursor: pointer;
 }
 .container__btn--image-center {
   padding-top: 5px;

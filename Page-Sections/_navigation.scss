@@ -9,6 +9,11 @@
 		font-family: typography.$para-font-family;
 		font-size: typography.$lg-para-font-size;
 	}
+	&__link:hover {
+		cursor: pointer;
+		text-decoration: underline;
+		color: palette.$secondary-text;
+	}
 }
 
 @include media-queries.desktop {
