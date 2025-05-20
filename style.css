@@ -227,6 +227,9 @@
   .projects--margin {
     margin-right: 9.75vw;
   }
+  .projects--size {
+    width: 30vw;
+  }
   .projects__title {
     font-size: 2.5vw;
   }
@@ -240,6 +243,9 @@
 @media only screen and (max-width: 576px) {
   #portfolio-title {
     margin-bottom: 20px;
+  }
+  .projects--size {
+    width: 80vw;
   }
   .projects__title {
     font-size: 32px;
@@ -345,7 +351,7 @@ body {
   .image-responsive {
     height: auto;
     width: 55%;
-    padding-top: 5px;
+    padding-top: 2px;
   }
 }
 
