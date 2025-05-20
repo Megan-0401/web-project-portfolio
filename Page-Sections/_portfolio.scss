@@ -4,7 +4,8 @@
 
 .projects {
 	&__preview {
-		background-color: black;
+		border: 3px solid white;
+		border-radius: 0.5vw;
 	}
 	&__info {
 		display: flex;
@@ -19,8 +20,12 @@
 #project2 {
 	grid-column-start: 3;
 }
+#project3 {
+	display: none;
+}
 #project4 {
 	grid-column-start: 3;
+	display: none;
 }
 .subtitle {
 	display: flex;

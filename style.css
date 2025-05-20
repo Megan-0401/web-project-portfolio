@@ -174,7 +174,8 @@
   }
 }
 .projects__preview {
-  background-color: black;
+  border: 3px solid white;
+  border-radius: 0.5vw;
 }
 .projects__info {
   display: flex;
@@ -190,8 +191,13 @@
   grid-column-start: 3;
 }
 
+#project3 {
+  display: none;
+}
+
 #project4 {
   grid-column-start: 3;
+  display: none;
 }
 
 .subtitle {
@@ -281,6 +287,7 @@
 .container {
   display: flex;
   gap: 10px;
+  height: 2.4vw;
 }
 .container__btn {
   border: none;

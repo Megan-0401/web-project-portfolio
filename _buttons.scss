@@ -9,6 +9,7 @@
 .container {
 	display: flex;
 	gap: 10px;
+	height: 2.4vw;
 	&__btn {
 		@include round-btn-style;
 		&--portfolio {
